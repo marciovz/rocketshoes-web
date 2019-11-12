@@ -1,9 +1,13 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+import Routes from './routes';
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Bem vindo à RocketShoes</h1>
-    </div>
+    <BrowserRouter>
+      {/* <Header /> */}
+      <Routes />
+    </BrowserRouter>
   );
 }
